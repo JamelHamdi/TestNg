@@ -34,7 +34,7 @@ public class SimpleTest {
 
     @Parameters({"browserName","url","env"})
     @BeforeTest
-    public void setup(String browserName, String url, String env){
+    public void setup(@NotNull String browserName, String url, String env){
         //System.setProperty("webdriver.chrome.driver","chromedriver");
         System.out.println("The browser Name is : "+browserName);
         if(browserName.equalsIgnoreCase("Chrome")){
